@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    min-height:100vh;
+    /*font-family: sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    color:#fff;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+button,a.btn{
+    background-color: #333;
+    color:#fff;
+    padding:20px 20px;
+    display: inline-block;
+    cursor:pointer;
+
+
+}
+button:hover, a.btn:hover{
+    text-decoration: none;
+    background-color: #f7c08a;
+    color:black;
+}
+.navbar{
+    width: 100%;
+
+    background-color: #333;
+}
+.navbar .container{
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center; 
+    width:90%; 
+    max-width:1440px;
+    height:70px;
+    margin:auto; 
+
+}
+.navbar .logo h2{
+    color:#fff;
+    /* font-size: 2rem; */
+
+}
+.navbar nav{
+    height:100%;
+}
+.navbar nav ul{
+    display: flex;
+    list-style:none;
+    height:100%;
+}
+.navbar nav ul li{
+    margin-left:20px;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding:0px 15px;
+    
+}
+.navbar nav ul li.active{
+    background-color: #444;
+    color:#f7c08a;
+}
+.navbar nav ul li.active a{
+    color:#f7c08a;
+}
+
+.hero{
+    min-height:100vh;
+    background: url("./img/showcase.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+
+}
+.hero .container{
+    width:90%;
+    margin:auto;
+    color:#fff;
+    padding:50px 20px;
+
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero .container h1{
+    margin:70px 0px 0px;
+    font-size: 4rem;
+}
+.hero .container h1 span{
+    color:#f7c08a;
+}
+.hero .container p{
+    margin:20px 0px 25px;
+    max-width:700px;
+}
+.hero .container p{
+    flex-grow:0;
+}
+
+.blocks{
+    width:100%;
+    min-height:70vh;
+    display: flex;
+}
+.blocks > div{
+    flex:1;
+}
+.blocks .left{
+    background:url("./img/photo-1.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+
+}
+.blocks .right{
+    background-color: #333;
+    color:#fff;
+
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:30px 20px;
+
+}
+.blocks .right h2{
+    text-align: center;
+}
+
+.blocks .right h2 span{
+    font-size: 2rem;
+    color: #f7c08a;
+
+}
+.blocks .right p{
+    padding:0px 20px;
+    text-align: center;
+    margin:20px 0px;
+
+}
+
+.blocks .right a.btn{
+    background-color: #fff;
+    color:black;
+}
+.blocks .right a.btn:hover{
+    background-color: #f7c08a;
+}
+
+.features{
+    display: flex;
+
+}
+.features > div{
+    flex:1;
+    text-align:center;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features > div:nth-child(even){
+    background-color: #f7c08a;
+
+}
+.features > div h2{
+    margin:10px 0px 0px;
+}
+
+.main-footer{
+    background-color: #333;
+    text-align:center;
+    padding:30px 0px;
+    color:#fff;
+}
+
+@media screen and (max-width:600px){
+    .navbar .container{
+        flex-direction: column;
+    }
+    .blocks{
+        flex-direction: column;
+        min-height:100vh;
+    }
+    .blocks .left{
+        height:400px;
+        flex:auto;
+    }
+    .blocks .right{
+        flex:auto;
+        min-height:60vh;
+    }
+
+    .features{
+        flex-direction: column;
+
+    }
+    .features > div{
+        min-height:200px;
+    }
+    .features > div p{
+        padding:0px 10%;
+    }
+}
+
+
+/*************************** ABOUT START *********************/
+/*************************** ABOUT START *********************/
+/*************************** ABOUT START *********************/
+/*************************** ABOUT START *********************/
+/*************************** ABOUT START *********************/
+
+.about-hotel{
+    width:100%;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+.about-hotel .container{
+    display: flex;
+    min-height:80vh;
+    width:98%;
+    max-width: 1240px;
+    margin:auto;
+
+}
+.about-hotel .left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    padding:20px 20px;
+}
+.about-hotel .left h1{
+    margin-bottom:20px;
+    font-size: 2rem;
+}
+.about-hotel .left h1 span{
+    color:#f7c08a;
+    font-size: 2.6rem;
+}
+.about-hotel .left p{
+    margin-bottom:20px;
+}
+
+.about-hotel .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+}
+.about-hotel .right img{
+    width:50%;
+    border-radius:50%;
+
+}
+
+.reviews{
+    width: 100%;
+    background:url("./img/test-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.reviews .container{
+    width: 100%;
+    min-height:100vh;
+    max-width: 1200px;
+    margin:auto;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:50px 0px;
+
+}
+.reviews .container h1{
+    color:#fff;
+    font-size: 2rem;
+    margin-bottom:50px;
+}
+.reviews .card{
+    display: flex;
+    width: 90%;
+    padding:40px 30px;
+    background-color: #f7c08a;
+    border-radius:5px;
+    margin:10px 0px;
+    align-items: center;
+
+}
+.reviews .card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right:20px;
+
+
+}
+@media screen and (max-width:600px){
+    .about-hotel .container{
+        flex-direction: column;
+        padding-bottom:50px;
+    }
+
+
+    .reviews .card{
+        flex-direction: column;
+        text-align:center;
+    }
+    .reviews h1{
+        text-align:center;
+    }
+    .reviews .card img{
+        margin-right:0px;
+        margin-bottom:20px;
+    }
+}
+
+/*************************** CONTACT START *********************/
+/*************************** CONTACT START *********************/
+/*************************** CONTACT START *********************/
+/*************************** CONTACT START *********************/
+
+.form-section{
+    width:100%;
+    background-color: #f3f3f3;
+
+}
+.form-section .container{
+    width:95%;
+    margin:auto;
+    max-width:1200px;
+    padding:10px 0px 20px;
+
+}
+.form-section h1{
+    font-size: 2.6rem;
+    color:#f7c08a;
+    margin-bottom:10px;
+
+}
+.form-section h1 span{
+    color:black;
+}
+.form-section form{
+    margin:20px 0px;
+}
+.form-section .form-group{
+    margin:20px 0px;
+}
+.form-section .form-group label{
+    display: block;
+    margin-bottom: 10px;
+}
+.form-section .form-group input{
+    width: 100%;
+
+    padding:10px 15px;
+    border:1px solid rgba(128, 128, 128, 0.671);
+    background-color: #f3f3f3;
+}
+.form-section form textarea{
+    background-color: #f3f3f3;
+    resize: none;
+    width:100%;
+    padding:20px;
+    font-size: 16px;
+}
+
+.form-section form button{
+    font-size: 16px;
+    border:none;
+
+}
+
+.contact-section{
+    background-color: #222;
+    color:#fff;
+    display: flex;
+    min-height:200px;
+
+}
+.contact-section > div{
+    flex:1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:20px 0px;
+
+}
+.contact-section > div:nth-child(even){
+    background-color: #f7c08a;
+    color:black;
+}
+.contact-section > div:nth-child(even) h2{
+    color:black;
+}
+.contact-section > div h2{
+    color:#fff;
+    margin-bottom:20px;
+}
+@media screen and (max-width:600px){
+    .contact-section{
+        flex-direction: column;
+
+    }
+}
